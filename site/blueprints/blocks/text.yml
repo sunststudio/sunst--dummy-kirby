@@ -1,0 +1,14 @@
+name: field.blocks.text.name
+icon: text
+preview: text
+fields:
+  text:
+    type: writer
+  textsize:
+    type: select
+    options:
+      normal: Normal Text
+      big: Big Text
+      small: Small Text
+    default: normal
+  layout: fields/layout

@@ -1,0 +1,39 @@
+type: group
+fields:
+  layout:
+    type: select
+    options:
+      bound: Bound
+      full: Full
+      inner: Inner
+    default: bound
+    width: 1/2
+  position:
+    type: select
+    options:
+      left: Left
+      center: Center
+      right: Right
+    default: left
+    width: 1/2
+  spacing:
+    type: select
+    options:
+      standard: Standard
+      space: Space
+      hug: Hug
+    default: standard
+    width: 1/2
+  width:
+    type: number
+    before: w
+    after: %
+    default: 100
+    min: 1
+    max: 100
+    help: Width in %
+    width: 1/2
+  custom:
+    type: text
+    label: Custom CSS Class
+    width: 1/2

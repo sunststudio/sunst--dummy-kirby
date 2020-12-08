@@ -1,0 +1,25 @@
+title: Work
+
+options:
+  status: false
+  url: false
+  delete: false
+
+sections:
+  drafts:
+    extends: sections/projects
+    headline: Draft
+    status: draft
+  listed:
+    extends: sections/projects
+    headline: Published
+    status: listed
+    layout: cards
+    size: tiny
+    image:
+      cover: true
+      ratio: 1/1
+  unlisted:
+    extends: sections/projects
+    headline: Unlisted
+    status: unlisted

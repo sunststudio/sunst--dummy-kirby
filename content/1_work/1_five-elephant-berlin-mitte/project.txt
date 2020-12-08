@@ -1,0 +1,74 @@
+Title: Five Elephant Berlin Mitte
+
+----
+
+Headline: GDR Nostalgia Meets Third Wave Coffee Culture
+
+----
+
+Headerimage: 
+
+----
+
+Headerlayout: right
+
+----
+
+Bgcolor: 
+
+----
+
+Textcolor: 
+
+----
+
+Overview-modules: []
+
+----
+
+Section-modules: []
+
+----
+
+Footertitle: Five Elephant. Mitte, Berlin
+
+----
+
+Year: 2018
+
+----
+
+Projectno: 
+
+----
+
+Footertext: Sunst was tasked with conceiving and constructing Five Elephant’s expansion into Berlin’s Mitte district. Combining a classic GDR Milchbar with contemporary coffee culture, the café was filled with unique elements and specially-designed components.
+
+----
+
+Categories: 
+
+----
+
+Tags: 
+
+----
+
+Credits:
+
+- 
+  role: Metal Work
+  name: 'Ertl & Zull'
+  website: ""
+- 
+  role: Terrazzo Counter
+  name: BNB Potsdam
+  website: ""
+
+----
+
+Overview: []
+
+----
+
+Text: []

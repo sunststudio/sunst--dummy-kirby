@@ -1,0 +1,6 @@
+type: pages
+headline: Work
+info: "{{ page.date }}"
+template:
+  - project
+empty: No Projects

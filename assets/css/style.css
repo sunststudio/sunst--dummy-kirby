@@ -1,0 +1,196 @@
+/* HELPER */
+
+.layout--full {
+  padding: 0;
+}
+.layout--bound {
+  padding: 0 3rem;
+}
+.layout--inner {
+  padding: 0 3rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.layout--flex {
+  display: flex;
+}
+
+.layout--two-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 4rem;
+  column-gap: 4rem;
+}
+
+
+
+.layout--bound img,
+.layout--full img,
+.layout--inner img {
+  width: 100%;
+}
+
+/* vertical spacing */
+
+.section {
+  margin: 24rem auto;
+}
+
+.section--space {
+  margin: 48rem auto;
+}
+
+.section--hug {
+  margin: 12rem auto;
+}
+
+/* width & align */
+
+.w10 {
+  width: 10%;
+}
+
+.w20 {
+  width: 20%;
+}
+.w25 {
+  width: 25%;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w60 {
+  width: 60%;
+}
+
+.w75 {
+  width: 75%;
+}
+
+.align--right {
+  margin-left: auto;
+}
+
+.align--center {
+  margin: 0 auto;
+}
+
+
+.video__wrap {
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+
+.video__wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* HEADER */
+
+.header {
+  position: fixed;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  padding: 0;
+  height: 0;
+  z-index: 10;
+}
+.header__inner {
+  display: flex;
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+/* OVERVIEW */
+
+.project-overview {
+  background-color: rgb(204, 155, 88);
+  padding-bottom: 2rem;
+}
+
+.project-cover {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+}
+
+.project-cover__image,
+.project-cover__content {
+  flex: 1 0 50%;
+  height: auto;
+}
+.project-cover__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 6rem;
+}
+.project-cover__image {
+  min-height: 50vh;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+
+/* SECTION HEADER */
+
+.section-header {
+  border-bottom: 2px solid #000;
+  margin: 0 3rem;
+  padding: 4rem 0;
+  display: flex;
+}
+.section-header__index {
+  margin-left: auto;
+}
+
+
+/* PROJECT BODY */
+
+.project-body {
+  padding-bottom: 2rem;
+}
+
+
+/* FOOTER BAR */
+
+.footer-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  border-top: 1px solid #000;
+}
+.footer-bar__inner {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.5;
+}
+.blinker {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-color: #000;
+  border-radius: 12px;
+}

@@ -1,0 +1,107 @@
+title: Project
+
+tabs:
+  header:
+    label: Header
+    preset: page
+    pages: false
+    fields:
+      headline:
+        type: text
+        help: If set, it'll be shown instead of Title, on the project page
+      headerimage:
+        label: Header Image
+        type: files
+        query: page.images
+        multiple: false
+        info: "{{ file.dimensions }}"
+        layout: list
+        width: 1/2
+      headerlayout:
+        label: Header Layout
+        type: select
+        options:
+          left: Image Left
+          right: Image Right
+          bottom: Image Bottom
+          cover: Image Cover
+        default: right
+        width: 1/2
+
+      bgcolor:
+        label: Background Color
+        type: text
+        # extends: fields/color
+        before: #
+        width: 1/2
+        default: "#FFFFFF"
+      textcolor:
+        label: Text Color
+        type: text
+        before: #
+        # extends: fields/color
+        width: 1/2
+        default: "#000000"
+
+  overview:
+    label: Overview
+    preset: page
+    pages: false
+    fields:
+      overview-modules:
+        label: Overview Blocks
+        type: blocks
+
+  sections:
+    label: Sections
+    preset: page
+    pages: false
+    fields:
+      section-modules:
+        label: Blocks
+        type: blocks
+
+  footer:
+    headline: Footer
+    type: fields
+    fields:
+      footertitle:
+        label: Footer Title
+        type: text
+        width: 1/2
+      year:
+        label: Year
+        type: text
+        format: year
+        width: 1/4
+      projectno:
+        label: Project-No.
+        type: text
+        minlength: 6
+        maxlength: 6
+        width: 1/4
+      footertext:
+        label: Footer Text
+        type: textarea
+        size: small
+      categories:
+        type: text
+        width: 1/2
+      tags:
+        type: tags
+        max: 3
+        help: Please use less than 3 tags, use underscore _ to signify a space symbol in the tag.
+        width: 1/2
+      credits:
+        label: Credits
+        type: structure
+        fields:
+          role:
+            label: Role
+            type: text
+          name:
+            label: Name
+            type: text
+          website:
+            label: URL
+            type: url

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'FoundersGrot-Regular';
+  src: url('../fonts/FoundersGroteskWeb-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%; /* 10px base */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'FoundersGrot-Regular';
+  font-size: 3.2rem;
+  line-height: 1.25;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 9.6rem;
+}
+
+h1.header__title {
+  font-size: 3.2rem;
+}
+
+/* TEXT ALTERATIONS */
+
+.text--big {
+  font-size: 9.6rem;
+  line-height: 1;
+}
+
+.text--columns {
+  columns: 2 8rem;
+}
+
+.text--caption {
+  margin-top: 1.4rem;
+  font-size: 2rem;
+  line-height: 1.25;
+}
