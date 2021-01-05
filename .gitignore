@@ -39,3 +39,8 @@ Icon
 # License
 # ---------------
 /site/config/.license
+
+# Content Folder
+# ------------
+
+/content
