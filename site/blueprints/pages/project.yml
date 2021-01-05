@@ -48,18 +48,32 @@ tabs:
     preset: page
     pages: false
     fields:
-      overview-modules:
-        label: Overview Blocks
+      overview:
+        label: Overwiew Sections
         type: blocks
+        fieldsets:
+          - heading
+          - text
+          - image
+          - imagedual
+          - video
+          - gallery
 
   sections:
     label: Sections
     preset: page
     pages: false
     fields:
-      section-modules:
-        label: Blocks
+      sections:
+        label: Project Sections
         type: blocks
+        fieldsets:
+          - heading
+          - text
+          - image
+          - dual
+          - video
+          - gallery
 
   footer:
     headline: Footer

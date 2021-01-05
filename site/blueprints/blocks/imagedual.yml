@@ -1,0 +1,42 @@
+# custom block for two images
+
+name: Two Images
+icon: copy
+preview: imageone
+
+fields:
+  imageone:
+    label: Image 1
+    type: files
+    multiple: false
+    image:
+      back: black
+    uploads:
+      template: blocks/image
+  imageonealt:
+    label: Alt Text
+    type: text
+    icon: title
+  imageonecaption:
+    label: Caption
+    type: writer
+    icon: text
+    inline: true
+
+  imagetwo:
+    label: Image 2
+    type: files
+    multiple: false
+    image:
+      back: black
+    uploads:
+      template: blocks/image
+  imagetwoalt:
+    label: Alt Text
+    type: text
+    icon: title
+  imagetwocaption:
+    label: Caption
+    type: writer
+    icon: text
+    inline: true
