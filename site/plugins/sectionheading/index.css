@@ -1,0 +1,18 @@
+.k-block-type-sectionheading {
+  cursor: pointer;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #000;
+}
+
+.k-block-type-sectionheading h2 {
+  display: flex;
+}
+
+.k-block-type-sectionheading h2 span {
+  margin-left: auto;
+}
+
+.k-block-type-sectionheading:empty::after {
+  content: "Section Heading …";
+  color: var(--color-text-light);
+}
