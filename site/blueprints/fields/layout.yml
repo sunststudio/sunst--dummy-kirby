@@ -24,14 +24,20 @@ fields:
       hug: Hug
     default: standard
     width: 1/2
+    help: Vertical Spacing
   width:
-    type: number
-    before: w
-    after: %
-    default: 100
-    min: 1
-    max: 100
-    help: Width in %
+    type: select
+    default: w100
+    options:
+      w10: "10%"
+      w20: "20%"
+      w25: "25%"
+      w30: "30%"
+      w40: "40%"
+      w50: "50%"
+      w60: "60%"
+      w75: "75%"
+    help: Block Width
     width: 1/2
   custom:
     type: text
