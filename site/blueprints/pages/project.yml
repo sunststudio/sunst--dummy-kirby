@@ -63,19 +63,13 @@ tabs:
         label: Project Sections
         type: blocks
         fieldsets:
+          - sectionheading
           - heading
           - text
           - image
           - dual
           - video
           - gallery
-          heading:
-            extends: blocks/heading
-            fields:
-              headingno:
-                label: Heading Number
-                type: text
-                before: "/"
 
   footer:
     headline: Footer

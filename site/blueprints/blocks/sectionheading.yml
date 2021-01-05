@@ -1,0 +1,11 @@
+name: Section Heading
+icon: headline
+preview: text
+fields:
+  sectionheading:
+    label: Section Heading
+    type: text
+  headingno:
+    label: Heading Number
+    type: text
+    before: "/"
