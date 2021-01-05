@@ -37,6 +37,8 @@ fields:
       w50: "50%"
       w60: "60%"
       w75: "75%"
+      w80: "80%"
+      w100: "100%"
     help: Block Width
     width: 1/2
   custom:
