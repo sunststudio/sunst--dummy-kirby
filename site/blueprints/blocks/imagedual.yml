@@ -5,38 +5,59 @@ icon: copy
 preview: imageone
 
 fields:
+  layout:
+    type: select
+    options:
+      bound: Bound
+      full: Full
+      inner: Inner
+    default: bound
+    width: 1/2
+  spacing:
+    type: select
+    options:
+      standard: Standard
+      space: Space
+      hug: Hug
+    default: standard
+    width: 1/2
+    help: Vertical Spacing
+
   imageone:
-    label: Image 1
+    label: Image One
     type: files
     multiple: false
     image:
       back: black
     uploads:
       template: blocks/image
-  imageonealt:
-    label: Alt Text
-    type: text
-    icon: title
   imageonecaption:
     label: Caption
     type: writer
     icon: text
     inline: true
-
+    width: 1/2
+  imageonealt:
+    label: Alt Text
+    type: text
+    icon: title
+    width: 1/2
   imagetwo:
-    label: Image 2
+    label: Image Two
     type: files
     multiple: false
     image:
       back: black
     uploads:
       template: blocks/image
-  imagetwoalt:
-    label: Alt Text
-    type: text
-    icon: title
   imagetwocaption:
     label: Caption
     type: writer
     icon: text
     inline: true
+    width: 1/2
+  imagetwoalt:
+    label: Alt Text
+    type: text
+    icon: title
+    width: 1/2
