@@ -27,21 +27,16 @@ tabs:
           cover: Image Cover
         default: right
         width: 1/2
-
       bgcolor:
         label: Background Color
-        type: text
-        # extends: fields/color
-        before: #
-        width: 1/2
+        type: colors
         default: "#FFFFFF"
+        width: 1/2
       textcolor:
         label: Text Color
-        type: text
-        before: #
-        # extends: fields/color
-        width: 1/2
+        type: colors
         default: "#000000"
+        width: 1/2
 
   overview:
     label: Overview
