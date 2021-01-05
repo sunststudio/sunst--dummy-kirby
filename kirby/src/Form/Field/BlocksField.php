@@ -26,12 +26,11 @@ class BlocksField extends FieldClass
 
     public function __construct(array $params = [])
     {
-        $this->fieldsets = Fieldsets::factory($params['fieldsets'] ?? null, [
-            'parent' => $params['model'] ?? site()
-        ]);
+        $this->setFieldsets($params['fieldsets'] ?? null, $params['model'] ?? site());
 
         parent::__construct($params);
 
+        $this->setEmpty($params['empty'] ?? null);
         $this->setGroup($params['group'] ?? 'blocks');
         $this->setMax($params['max'] ?? null);
         $this->setMin($params['min'] ?? null);
@@ -55,6 +54,8 @@ class BlocksField extends FieldClass
 
                 $result[] = $block;
             } catch (Throwable $e) {
+                $result[] = $block;
+
                 // skip invalid blocks
                 continue;
             }
@@ -181,6 +182,17 @@ class BlocksField extends FieldClass
         return $this->valueToJson($blocks, $this->pretty());
     }
 
+    protected function setFieldsets($fieldsets, $model)
+    {
+        if (is_string($fieldsets) === true) {
+            $fieldsets = [];
+        }
+
+        $this->fieldsets = Fieldsets::factory($fieldsets, [
+            'parent' => $model
+        ]);
+    }
+
     protected function setGroup(string $group = null)
     {
         $this->group = $group;
@@ -217,13 +229,18 @@ class BlocksField extends FieldClass
                 $index  = 0;
 
                 foreach ($value as $block) {
-                    $blockType   = $block['type'];
-                    $blockFields = $fields[$blockType] ?? $this->fields($blockType) ?? [];
+                    $index++;
+                    $blockType = $block['type'];
+
+                    try {
+                        $blockFields = $fields[$blockType] ?? $this->fields($blockType) ?? [];
+                    } catch (Throwable $e) {
+                        // skip invalid blocks
+                        continue;
+                    }
 
                     // store the fields for the next round
                     $fields[$blockType] = $blockFields;
-
-                    $index++;
 
                     // overwrite the content with the serialized form
                     foreach ($this->form($blockFields, $block['content'])->fields() as $field) {
