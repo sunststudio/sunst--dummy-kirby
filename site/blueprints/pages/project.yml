@@ -27,6 +27,21 @@ tabs:
           cover: Image Cover
         default: right
         width: 1/2
+      client:
+        label: Client
+        type: text
+        width: 1/2
+      year:
+        label: Year
+        type: text
+        format: year
+        width: 1/4
+      projectno:
+        label: Project-No.
+        type: text
+        minlength: 6
+        maxlength: 6
+        width: 1/4
       bgcolor:
         label: Background Color
         type: colors
@@ -79,17 +94,6 @@ tabs:
         label: Footer Title
         type: text
         width: 1/2
-      year:
-        label: Year
-        type: text
-        format: year
-        width: 1/4
-      projectno:
-        label: Project-No.
-        type: text
-        minlength: 6
-        maxlength: 6
-        width: 1/4
       footertext:
         label: Footer Text
         type: textarea
